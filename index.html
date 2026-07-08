@@ -9,52 +9,71 @@
 <style>
 
 body {
-  margin:0;
-  font-family: Georgia, serif;
-  background:#5b1a2a;
-  color:#fff8ed;
-  text-align:center;
+    margin: 0;
+    background: #faf6f1;
+    font-family: "Georgia", serif;
+    color: #5b1a2a;
+    text-align: center;
 }
 
 .carta {
-  min-height:100vh;
-  display:flex;
-  justify-content:center;
-  align-items:center;
-  padding:30px;
-  background: linear-gradient(
-    rgba(91,26,42,0.95),
-    rgba(91,26,42,0.95)
-  );
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
 }
 
-.contenido {
-  border:2px solid #d4af37;
-  padding:40px 25px;
-  max-width:500px;
-  border-radius:10px;
-  background:#6b2335;
-  box-shadow:0 0 25px rgba(212,175,55,0.5);
+.contenedor {
+    background: #fffdf9;
+    max-width: 500px;
+    padding: 45px 30px;
+    border: 3px solid #8b3045;
+    border-radius: 5px;
+    box-shadow: 0 10px 30px rgba(91,26,42,0.2);
+    position: relative;
+}
+
+.contenedor:before {
+    content: "🌹";
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 35px;
+}
+
+.contenedor:after {
+    content: "🌹";
+    position: absolute;
+    bottom: 10px;
+    right: 15px;
+    font-size: 35px;
+}
+
+.dorado {
+    color: #c9a24d;
+    font-size: 28px;
 }
 
 h1 {
-  font-size:45px;
-  color:#f4d98b;
+    font-size: 42px;
+    color: #8b3045;
+    margin: 20px 0;
 }
 
 h2 {
-  font-weight:normal;
-  color:#f8e8c0;
+    font-weight: normal;
 }
 
-.linea {
-  color:#d4af37;
-  font-size:30px;
+.texto {
+    line-height: 1.8;
+    font-size: 17px;
 }
 
 .frase {
-  font-style:italic;
-  margin-top:25px;
+    margin-top: 25px;
+    font-style: italic;
+    color: #7b5960;
 }
 
 </style>
@@ -65,11 +84,15 @@ h2 {
 
 <div class="carta">
 
-<div class="contenido">
+<div class="contenedor">
 
-<h2>Con la bendición de Dios</h2>
+<div class="dorado">✦</div>
 
-<p>
+<h2>
+Con la bendición de Dios
+</h2>
+
+<p class="texto">
 Los padres del novio
 <br>
 <strong>Servio Carmona</strong>
@@ -77,9 +100,9 @@ Los padres del novio
 <strong>Carmen Castillo</strong>
 </p>
 
-<div class="linea">♡</div>
+<div class="dorado">♡</div>
 
-<p>
+<p class="texto">
 Los padres de la novia
 <br>
 <strong>Ramón Ronquillo</strong>
@@ -89,23 +112,25 @@ Los padres de la novia
 
 <br>
 
-<p>
-Tienen el honor de invitarte al matrimonio de sus hijos
+<p class="texto">
+Tenemos el honor de invitarte al matrimonio de nuestros hijos
 </p>
 
 <h1>
 María José
 <br>
-♡
+&
 <br>
 Stalin
 </h1>
 
 <p class="frase">
-"El amor es paciente, el amor es bondadoso..."
+"El amor es paciente, el amor es bondadoso"
 <br>
 1 Corintios 13:4
 </p>
+
+<div class="dorado">✦</div>
 
 </div>
 
